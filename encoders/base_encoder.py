@@ -28,7 +28,7 @@ class BaseEncoder(ABC):
         with open(filename, "w") as f:
             f.write(self.encode(text))
 
-    def decode_from_file(self,  filename: str):
+    def decode_from_file(self,  filename: str) -> str:
         with open(filename, "r", encoding="utf8") as f:
             return self.decode(f.read())
 

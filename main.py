@@ -1,19 +1,23 @@
-from vigenere import Vigenere
-from encoders.caesar import Caesar
+import encoders
 
-c = Caesar(5)
-c.encode_to_file(input(),"MY_SECRET.txt")
-c.decode_from_file("MY_SECRET.txt")
-s = Caesar(5)
-v = Vigenere("Привет")
+vigenere.Vigenere
+
+a = encoders.test_morze.MorseEncoder()
+
+#print(a.encode("друг"))
+#c = encoders.Caesar(5)
+a.encode_to_file(input(),"MY_SECRET.txt")
+#print(a.encode_to_file("MY_SECRET.txt"))
+print(a.decode_from_file("MY_SECRET.txt"))
+#v = encoders.Vigenere("Привет")
 
 
-print(s.encode("друг"))
-print(v.encode("друг"))
+
+#print(v.encode("друг"))
 #for i in range(34):
-#    print(caesar.shift( "hellow", 1))
+#print(caesar.shift( "hellow", 1))
 
 #print(caesar.encode("Hellow word!f"))
 #print(caesar.decode("Khoorz zrug!"))
-#print(vigenere.encode("Hellow", "word!"))
+
 #print(vigenere.decode())

@@ -1,4 +1,4 @@
-from common import shift
+from .common import shift
 from encoders.base_encoder import BaseEncoder
 
 
@@ -15,3 +15,8 @@ class Caesar(BaseEncoder):
 
     def decode(self, text: str, key: int = 3) -> str:
         return "".join(shift(ch, -self.key) for ch in text)
+
+
+
+v = Caesar(5)
+print(v.encode("друг"))
