@@ -1,5 +1,6 @@
 import encoders
 
+vigenere.Vigenere
 
 a = encoders.test_morze.MorseEncoder()
 
