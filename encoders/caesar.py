@@ -1,4 +1,4 @@
-from common import shift
+from .common import shift
 from encoders.base_encoder import BaseEncoder
 
 
