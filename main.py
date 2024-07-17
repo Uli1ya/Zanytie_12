@@ -1,6 +1,13 @@
 import encoders
+from encoders import CombineCipher
 
-vigenere.Vigenere
+c = CombineCipher(4)
+
+text = c.encode("hello word")
+print(text)
+print(c.decode(text))
+
+
 
 a = encoders.test_morze.MorseEncoder()
 

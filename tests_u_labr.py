@@ -4,6 +4,7 @@ import sys
 from encoders import Caesar
 from encoders import Vigenere
 from encoders import MorseEncoder
+from encoders import CombineCipher
 
 CAESAR_CORRECT_KEYS = [1, 2, 3]
 CAESAR_WRONG_KEYS = ["hello", 2.3]
@@ -45,7 +46,8 @@ class KeyTests(unittest.TestCase):
 class EncodeDecodeTests(unittest.TestCase):
     ENCODERS = [(Caesar, CAESAR_CORRECT_KEYS),
                 (Vigenere, VIGENERE_CORRECT_KEYS),
-                (MorseEncoder, MORZE_CORRECT_KEYS)]
+                (MorseEncoder, MORZE_CORRECT_KEYS),
+                (CombineCipher, [1, 2, 3])]
 
     def test_encode_decode(self):  # проверяет функционал декодера и  энкодера
 

@@ -1,5 +1,5 @@
 from abc import ABC, abstractmethod
-
+import logging
 
 class BaseEncoder(ABC):
     _key = None
@@ -26,6 +26,8 @@ class BaseEncoder(ABC):
     def encode_to_file(self, text: str, filename: str):
 
         with open(filename, "w") as f:
+            logger = logging.getLogger()               # возвращает объект логера запросит логер который существует
+            logger.debug(self.encode(text))
             f.write(self.encode(text))
 
     def decode_from_file(self,  filename: str) -> str:
